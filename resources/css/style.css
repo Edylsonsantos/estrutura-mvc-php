@@ -1,0 +1,265 @@
+body {
+    font-family: "poppins", sans-serif;
+}
+.background{
+    background-color: #0f2c3f;
+    color: white;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    padding: 55px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+.sidebar .nav-item{
+    padding: 8px 0px;
+    align-items: center;
+}
+.sidebar .active-item{
+    background-color: #0f2c3f;
+    color: white;
+}
+.sidebar .nav-item:hover{
+    background-color: #0f2c3f;
+}
+.sidebar .nav-item:hover .nav-link{
+    color: white;
+}
+.sidebar .nav-item i{
+    align-items: center;
+    font-size: 25px;
+}
+.sidebar li a{
+    color: #0f2c3f;
+    font-family: "Poppins";
+    font-size: 17px!important;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+}
+.sidebar .active{
+    color: white;
+}
+.sidebar-sticky {
+    padding: 0;
+}
+
+.navbar {
+    z-index: 100;
+}
+.navbar-nav li a{
+    color: #0f2c3f!important;
+    font-family: "Poppins";
+    font-size: 17px!important;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navbar-nav li a i{
+    font-size: 25px;
+}
+.card {
+    border-radius: 0!important;
+}
+.table{
+    overflow-y: auto;
+    flex: 1;
+}
+/*tooltip*/
+.custom-tooltip .tooltip-inner {
+    background-color: #343a40; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+.custom-tooltip .arrow::before {
+    border-top-color: #343a40;
+}
+/*noticias*/
+.news-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+.news-img {
+    max-width: 250px;
+    max-height: 150px;
+    margin-right: 20px;
+    border-radius: 0;
+}
+.news-content {
+    flex-grow: 1;
+}
+.news-title {
+    font-size: 1.25rem;
+    font-family: "poppins";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #0f2c3f;
+}
+.news-desc {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+.news-date {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: gray;
+}
+.news-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.news-actions button {
+    margin-left: 10px;
+    width: 100%;
+    border-radius: 0;
+}
+@media screen and (max-width: 800px) {
+    .sidebar{
+        display: none;
+    }
+    .nav-item{
+        display: block!important;
+    }
+}
+/*news*/
+.input-group {
+    margin-bottom: 10px;
+    border-radius: 0!important;
+    border: 1px solid #ccc;
+}
+.input-group-text{
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    background-color: #0f2c3f!important;
+    color: white;
+    font-family: "poppins";
+    border: 0;
+}
+.input-group button{
+    border: 0;
+}
+.input-group input{
+    padding: 10px 10px;
+    font-family: "poppins";
+    box-shadow: none;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+.btn-toolbar .btn {
+    flex: 1; 
+    margin-left: 5px;
+    border-radius: 0;
+}
+.float-right {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+}
+.float-right button{
+    border: 1px solid #ccc;
+}
+button{
+    border-radius: 0!important;
+}
+
+/*upload news*/
+.upload-container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .upload-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .upload-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .preview-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .image-preview {
+    margin: 10px;
+    max-width: 50%;
+    max-height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .image-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .image-preview .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .image-preview .delete-btn:hover {
+    background-color: #cc0000;
+  }
+/*spalsh*/
+.splash-container {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    z-index: 20000;
+  }
+  .splash-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .progress-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .progress-background {
+    stroke: #444;
+    fill: none;
+  }
+  .progress-bar {
+    stroke: #f1c40f;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    transition: stroke-dasharray 5s linear;
+  }
+
+  .table{
+    border-collapse: collapse;
+  }
